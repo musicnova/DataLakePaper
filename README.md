@@ -1,5 +1,5 @@
-# DataLakePaper
-python library for Data Lake (model: data vault) visualization using excel (it will be a real wall paper of A4 sheets)
+# DataLakePaper (Model DATA VAULT of Dan Linstedt)
+Python library for Data Lake (model: data vault) visualization using excel (it will be a real wall paper of A4 sheets)
 
 [RU/EN]
 
@@ -45,6 +45,12 @@ python library for Data Lake (model: data vault) visualization using excel (it w
 
 В итоге таблицы делим по префиксам H_ - квадрат, S_ - круг, L - ромб и тоже оформляем выделениями, нумеруем N0001.t1, N00002.t2 и т д. Прорисовываем над H_ и S_ view (обводка с отступом в 2 ячейки), также делаем для L_ и S_ или L_ и L_ и S_ и S_.
 Дополнительно находим границы листов A4 и отмечаем в нижнем правом углу буквами координаты, например E1.
+
+Сверху могут быть изображены источники как A1U44, A2U31,... используемые и B1U7, B2U6, ... неиспльзуемые.
+У аттрибутов в префиксе указывается "(fk) ", если это foreign key и в суффиксе указывается "[A1U44, A2U31, ...]" все ссылки на источники. Здесь U - это пользовательская нумерация из 01_document.xls.
+
+[Идея на подумать - если связи между таблицами тоже разбить в последовательные цепочки из 4-х элементов, то потом стрелки в excel будет нарисовать сильно проще]
+[Идея#2 на подумать - если в N угольник таблицы добавить K элементов (по количеству Foreign Keys) и зарисовать стрелки последовательными цепочками из 4-х элементов, то потом может быть сильно проще распутать эти связи]
 
 4. Из Jupyter запускаем команду создать бумагу data paper.
 В каталоге появится файл 04_paper.xls и 04_empty.xls.
