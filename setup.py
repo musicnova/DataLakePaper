@@ -8,7 +8,7 @@ setup(
     author = '',
     author_email = '',
     url = 'https://github.com/musicnova/DataLakePlan',
-    download_url = 'https://github.com/musicnova/DataLakePlan/README.md',
+    download_url = 'https://github.com/musicnova/DataLakePlan/archive/0.0.1.tar.gz',
     keywords = ['data', 'lake'],
     classifiers = [],
 )
