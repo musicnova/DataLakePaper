@@ -1,0 +1,41 @@
+{% set name = "datalakeplan" %}
+{% set version = "0.0.2" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "eb737527bbfd38b2614b43c1a6e3492ed867440cf4bb701135a03015e5a0fa97" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+  script: 'python setup.py install '
+
+requirements:
+  host:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - datalakeplan
+
+about:
+  home: https://github.com/musicnova/DataLakePlan
+  license: UNKNOWN
+  license_family: OTHER
+  license_file: ''
+  summary: data lake plan vault excel
+  description: ''
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''
