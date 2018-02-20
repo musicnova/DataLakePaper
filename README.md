@@ -3,6 +3,14 @@ Python library for Data Lake (model: data vault or data vault A) visualization u
 
 README: http://www.anchormodeling.com/
 
+Just try it:
+
+conda install -c musicnova datalakeplan
+
+OR
+
+pip install datalakeplan
+
 [RU/EN]
 
 Идея в следующем.
