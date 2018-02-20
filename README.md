@@ -1,6 +1,8 @@
 # DataLakePlan (Model DATA VAULT of Dan Linstedt or ANCHOR MODELING of Lars Ronnback)
 Python library for Data Lake (model: data vault or data vault A) visualization using excel (it will be a real wall paper of A4 sheets)
 
+README: http://www.anchormodeling.com/
+
 [RU/EN]
 
 Идея в следующем.
