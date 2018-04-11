@@ -1,3 +1,7 @@
+
+
+
+
 # DataLakePlan (Model DATA VAULT of Dan Linstedt or ANCHOR MODELING of Lars Ronnback)
 Python library for Data Lake (model: data vault or data vault A) visualization using excel (it will be a real wall paper of A4 sheets)
 
@@ -79,3 +83,34 @@ pip install datalakeplan
 
 Вот как-то так.
 Успехов в работе!
+
+
+
+
+https://www.codementor.io/arpitbhayani/host-your-python-package-using-github-on-pypi-du107t7ku ﻿
+
+STEP1 READ https://www.codementor.io/arpitbhayani/host-your-python-package-using-github-on-pypi-du107t7ku https://stackoverflow.com/a/45209514
+STEP2 READ https://pep8.ru/doc/tutorial-3.1/6.html
+STEP3 READ https://docs.python.org/3/distutils/configfile.htmlhttps://stackoverflow.com/a/27093036
+STEP4 READ https://openpyxl.readthedocs.io/en/stable/
+hg clone https://bitbucket.org/openpyxl/openpyxl
+
+hg up 2.5
+
+virtualenv openpyxl
+
+cd openpyxl
+
+source bin/activate
+
+pip install -U -r requirements.txt
+
+python setup.py develop
+
+py.test --cov openpyxl/cell openpyxl/cell
+
+tox -e doc
+
+STEP5 READ https://conda.io/docs/user-guide/tutorials/build-pkgs.html
+STEP6 READ https://conda.io/docs/commands/build/conda-develop.html
+
